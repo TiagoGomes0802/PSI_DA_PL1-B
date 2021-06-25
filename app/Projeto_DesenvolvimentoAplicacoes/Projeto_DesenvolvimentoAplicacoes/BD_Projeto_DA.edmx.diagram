@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3d0516983df742d7940f8fcd6e47c525" Name="Diagram1" ZoomLevel="80" >
+        <EntityTypeShape EntityType="BD_Projeto_DA.Pessoa" Width="1.5" PointX="1.875" PointY="4.25" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Filho" Width="1.5" PointX="0.875" PointY="1.25" />
+        <InheritanceConnector EntityType="BD_Projeto_DA.Filho" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Cliente" Width="1.5" PointX="0.625" PointY="7.875" />
+        <InheritanceConnector EntityType="BD_Projeto_DA.Cliente" />
+        <AssociationConnector Association="BD_Projeto_DA.ClienteFilho" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Animador" Width="1.5" PointX="6.125" PointY="6.25" />
+        <InheritanceConnector EntityType="BD_Projeto_DA.Animador" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Compra" Width="1.5" PointX="3.75" PointY="8.25" />
+        <AssociationConnector Association="BD_Projeto_DA.ClienteCompra" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.DetalheCompra" Width="1.5" PointX="6.625" PointY="8.375" />
+        <AssociationConnector Association="BD_Projeto_DA.CompraDetalheCompra" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Produto" Width="1.5" PointX="9.375" PointY="8.25" />
+        <AssociationConnector Association="BD_Projeto_DA.ProdutoDetalheCompra" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.TipoProduto" Width="1.5" PointX="12.75" PointY="8.125" />
+        <AssociationConnector Association="BD_Projeto_DA.TipoProdutoProduto" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Escola" Width="1.5" PointX="6.25" PointY="0.625" />
+        <AssociationConnector Association="BD_Projeto_DA.EscolaFilho" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Participacao" Width="1.5" PointX="10.125" PointY="1.25" />
+        <AssociationConnector Association="BD_Projeto_DA.EscolaParticipacao" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Evento" Width="1.5" PointX="13.625" PointY="2" />
+        <AssociationConnector Association="BD_Projeto_DA.EventoParticipacao" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Inscricao" Width="1.5" PointX="4.5" PointY="3.875" />
+        <AssociationConnector Association="BD_Projeto_DA.FilhoInscricao" />
+        <AssociationConnector Association="BD_Projeto_DA.EventoInscricao" />
+        <EntityTypeShape EntityType="BD_Projeto_DA.Colaboracao" Width="1.5" PointX="10.5" PointY="5.375" />
+        <AssociationConnector Association="BD_Projeto_DA.EventoColaboracao" />
+        <AssociationConnector Association="BD_Projeto_DA.AnimadorColaboracao" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
